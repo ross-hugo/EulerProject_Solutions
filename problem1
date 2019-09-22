@@ -1,0 +1,11 @@
+def sumOfMultiples(n):
+    listOfNums = []
+    for i in range(2, n):
+        if i%3 == 0 or i % 5 == 0:
+            listOfNums.append(i)
+    print(listOfNums)
+    finalSet = set(listOfNums)
+    finalNum = sum(finalSet)
+    print(finalNum)
+
+sumOfMultiples(10)
